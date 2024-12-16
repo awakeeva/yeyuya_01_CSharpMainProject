@@ -8,7 +8,7 @@ using UnityEngine;
 using Utilities;
 //I'm Malenia
 //Blade of Miquella
-//i'm fine
+//Goddess of Rot
 namespace Controller
 {
     public class BotController
