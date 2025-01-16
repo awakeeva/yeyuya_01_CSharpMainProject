@@ -1,6 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Model;
 using Model.Runtime.Projectiles;
 using UnityEngine;
+using Utilities;
 
 namespace UnitBrains.Player
 {
@@ -12,7 +15,9 @@ namespace UnitBrains.Player
         private float _temperature = 0f;
         private float _cooldownTime = 0f;
         private bool _overheated;
-        
+
+        private List<Vector2Int> dangerousTargetsOutOfRange = new List<Vector2Int>();
+
         protected override void GenerateProjectiles(Vector2Int forTarget, List<BaseProjectile> intoList)
         {
             float overheatTemperature = OverheatTemperature;
@@ -37,38 +42,45 @@ namespace UnitBrains.Player
 
         public override Vector2Int GetNextStep()
         {
-            return base.GetNextStep();
+            var currentPos = unit.Pos;
+
+            if (dangerousTargetsOutOfRange.Count() > 0)
+               return currentPos.CalcNextStepTowards(dangerousTargetsOutOfRange[0]);
+
+            return currentPos;
         }
 
         protected override List<Vector2Int> SelectTargets()
         {
-            ///////////////////////////////////////
-            // Homework 1.4 (1st block, 4rd module)
-            ///////////////////////////////////////
+            dangerousTargetsOutOfRange.Clear();
 
-            List<Vector2Int> result = GetReachableTargets();
+            Vector2Int nearestTarget
+                = runtimeModel.RoMap.Bases[IsPlayerUnitBrain ? RuntimeModel.BotPlayerId : RuntimeModel.PlayerId];
 
-            if (result.Count > 1)
+            var allTargets = GetAllTargets();
+
+            if (allTargets.Count() > 0)
             {
-                var targetNearest = result[0];
-                float targetNearestDist = float.MaxValue;
+                float nearestTargetDist = float.MaxValue;
 
-                foreach (var target in result)
+                foreach (var target in allTargets)
                 {
-                    if (DistanceToOwnBase(target) < targetNearestDist)
+                    if (DistanceToOwnBase(target) < nearestTargetDist)
                     {
-                        targetNearestDist = DistanceToOwnBase(target);
-                        targetNearest = target;
+                        nearestTargetDist = DistanceToOwnBase(target);
+                        nearestTarget = target;
                     }
                 }
-
-                result.Clear();
-                result.Add(targetNearest);
             }
 
-            return result;
+            List<Vector2Int> result = new List<Vector2Int>();
 
-            ///////////////////////////////////////
+            if (GetReachableTargets().Contains(nearestTarget))
+                result.Add(nearestTarget);
+            else
+                dangerousTargetsOutOfRange.Add(nearestTarget);
+
+            return result;
         }
 
         public override void Update(float deltaTime, float time)
