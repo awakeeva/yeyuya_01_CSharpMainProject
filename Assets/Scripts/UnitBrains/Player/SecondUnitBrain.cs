@@ -1,9 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Model;
 using Model.Runtime.Projectiles;
 using UnityEngine;
 using Utilities;
+
 
 namespace UnitBrains.Player
 {
@@ -17,6 +19,14 @@ namespace UnitBrains.Player
         private bool _overheated;
 
         private List<Vector2Int> dangerousTargetsOutOfRange = new List<Vector2Int>();
+        private const int limitTargetsForSmartSelect = 3;
+
+        private static int _idValue = 0;
+        public int Id { get; private set; }
+        public SecondUnitBrain()
+        {
+            Id = _idValue++;
+        }
 
         protected override void GenerateProjectiles(Vector2Int forTarget, List<BaseProjectile> intoList)
         {
@@ -52,33 +62,25 @@ namespace UnitBrains.Player
 
         protected override List<Vector2Int> SelectTargets()
         {
-            dangerousTargetsOutOfRange.Clear();
+            List<Vector2Int> allTargets = GetAllTargets().ToList();
+            Vector2Int enemyBasePos = runtimeModel.RoMap.Bases[IsPlayerUnitBrain ? RuntimeModel.BotPlayerId : RuntimeModel.PlayerId];
 
-            Vector2Int nearestTarget
-                = runtimeModel.RoMap.Bases[IsPlayerUnitBrain ? RuntimeModel.BotPlayerId : RuntimeModel.PlayerId];
+            allTargets.Remove(enemyBasePos);
+            if (!allTargets.Any())
+                allTargets.Add(enemyBasePos);
+            else
+                SortByDistanceToOwnBase(allTargets);
 
-            var allTargets = GetAllTargets();
-
-            if (allTargets.Count() > 0)
-            {
-                float nearestTargetDist = float.MaxValue;
-
-                foreach (var target in allTargets)
-                {
-                    if (DistanceToOwnBase(target) < nearestTargetDist)
-                    {
-                        nearestTargetDist = DistanceToOwnBase(target);
-                        nearestTarget = target;
-                    }
-                }
-            }
+            int indxPriorityTarget = Id % Math.Min(limitTargetsForSmartSelect, allTargets.Count());
+            Vector2Int priotityTarget = allTargets[indxPriorityTarget];
 
             List<Vector2Int> result = new List<Vector2Int>();
+            dangerousTargetsOutOfRange.Clear();
 
-            if (GetReachableTargets().Contains(nearestTarget))
-                result.Add(nearestTarget);
+            if (GetReachableTargets().Contains(priotityTarget))
+                result.Add(priotityTarget);
             else
-                dangerousTargetsOutOfRange.Add(nearestTarget);
+                dangerousTargetsOutOfRange.Add(priotityTarget);
 
             return result;
         }
