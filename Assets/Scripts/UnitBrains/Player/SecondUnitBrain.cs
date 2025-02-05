@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Model;
 using Model.Runtime.Projectiles;
+using UnitBrains.Pathfinding;
 using UnityEngine;
 using Utilities;
+using static UnityEngine.GraphicsBuffer;
 
 
 namespace UnitBrains.Player
@@ -52,12 +54,17 @@ namespace UnitBrains.Player
 
         public override Vector2Int GetNextStep()
         {
-            var currentPos = unit.Pos;
+            var nextPos = unit.Pos;
 
             if (dangerousTargetsOutOfRange.Count() > 0)
-               return currentPos.CalcNextStepTowards(dangerousTargetsOutOfRange[0]);
+            {
+                AStarUnitPath astarPath = new AStarUnitPath (runtimeModel, unit.Pos, dangerousTargetsOutOfRange[0], this);
+                base.ActivePath = astarPath;
 
-            return currentPos;
+                nextPos = astarPath.GetNextStepFrom(unit.Pos);
+            }
+
+            return nextPos;
         }
 
         protected override List<Vector2Int> SelectTargets()
