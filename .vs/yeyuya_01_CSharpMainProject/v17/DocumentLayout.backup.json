@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\assets\\scripts\\unitbrains\\pathfinding\\debugpathoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\pathfinding\\debugpathoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\assets\\scripts\\view\\unitview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\view\\unitview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\assets\\scripts\\unitbrains\\pathfinding\\astarunitpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\pathfinding\\astarunitpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|c:\\unity_project_data\\yeyuya_01_csharpmainproject\\assets\\scripts\\unitbrains\\baseunitbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\baseunitbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|c:\\unity_project_data\\yeyuya_01_csharpmainproject\\assets\\scripts\\model\\runtimemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\model\\runtimemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|c:\\unity_project_data\\yeyuya_01_csharpmainproject\\assets\\scripts\\unitbrains\\player\\groupbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\player\\groupbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\assets\\scripts\\unitbrains\\player\\secondunitbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\player\\secondunitbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|c:\\unity_project_data\\yeyuya_01_csharpmainproject\\assets\\scripts\\unitbrains\\pathfinding\\astarunitpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\pathfinding\\astarunitpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\assets\\scripts\\unitbrains\\baseunitbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\baseunitbrain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\assets\\scripts\\unitbrains\\pathfinding\\debugpathoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8F09F58-CADC-09C7-2F29-29638279825F}|Root.csproj|solutionrelative:assets\\scripts\\unitbrains\\pathfinding\\debugpathoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,46 +30,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RuntimeModel.cs",
-              "DocumentMoniker": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\Model\\RuntimeModel.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Model\\RuntimeModel.cs",
-              "ToolTip": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\Model\\RuntimeModel.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Model\\RuntimeModel.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwBkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T20:07:12.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnitView.cs",
-              "DocumentMoniker": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\View\\UnitView.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\View\\UnitView.cs",
-              "ToolTip": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\View\\UnitView.cs",
-              "RelativeToolTip": "Assets\\Scripts\\View\\UnitView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T15:17:47.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GroupBrain.cs",
+              "DocumentMoniker": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\UnitBrains\\Player\\GroupBrain.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UnitBrains\\Player\\GroupBrain.cs",
+              "ToolTip": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\UnitBrains\\Player\\GroupBrain.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UnitBrains\\Player\\GroupBrain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:51:45.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DebugPathOutput.cs",
               "DocumentMoniker": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\UnitBrains\\Pathfinding\\DebugPathOutput.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UnitBrains\\Pathfinding\\DebugPathOutput.cs",
               "ToolTip": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\UnitBrains\\Pathfinding\\DebugPathOutput.cs",
               "RelativeToolTip": "Assets\\Scripts\\UnitBrains\\Pathfinding\\DebugPathOutput.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T00:11:56.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T00:11:56.273Z"
             },
             {
               "$type": "Document",
@@ -85,18 +67,17 @@
               "RelativeToolTip": "Assets\\Scripts\\UnitBrains\\BaseUnitBrain.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T23:13:45.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T23:13:45.09Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "SecondUnitBrain.cs",
               "DocumentMoniker": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\UnitBrains\\Player\\SecondUnitBrain.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UnitBrains\\Player\\SecondUnitBrain.cs",
               "ToolTip": "C:\\unity_project_data\\yeyuya_01_CSharpMainProject\\Assets\\Scripts\\UnitBrains\\Player\\SecondUnitBrain.cs",
               "RelativeToolTip": "Assets\\Scripts\\UnitBrains\\Player\\SecondUnitBrain.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAswD8AAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T19:38:23.929Z",
               "EditorCaption": ""

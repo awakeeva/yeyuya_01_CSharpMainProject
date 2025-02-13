@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\View\ChooseUnitView.cs" />
     <Compile Include="Assets\Scripts\View\UnitCardView.cs" />
     <Compile Include="Assets\Scripts\UnitBrains\Player\DefaultPlayerUnitBrain.cs" />
+    <Compile Include="Assets\Scripts\UnitBrains\Player\GroupBrain.cs" />
     <Compile Include="Assets\Scripts\View\LevelFinishedView.cs" />
     <Compile Include="Assets\Scripts\View\Gameplay3dView.cs" />
     <Compile Include="Assets\Scripts\EnterPoint.cs" />
