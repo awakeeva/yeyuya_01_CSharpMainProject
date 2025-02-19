@@ -21,6 +21,7 @@ namespace UnitBrains
         }
 
         protected Unit unit { get; private set; }
+        protected GroupBrain groupBrain { get; private set; }
         protected IReadOnlyRuntimeModel runtimeModel => ServiceLocator.Get<IReadOnlyRuntimeModel>();
         private BaseUnitPath _activePath = null;
         
@@ -68,6 +69,10 @@ namespace UnitBrains
         public void SetUnit(Unit unit)
         {
             this.unit = unit;
+        }
+        public void SetGroupBrain(GroupBrain groupBrain)
+        {
+            this.groupBrain = groupBrain;
         }
 
         public virtual void Update(float deltaTime, float time)

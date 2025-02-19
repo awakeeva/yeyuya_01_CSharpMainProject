@@ -27,8 +27,8 @@ namespace UnitBrains.Player
 
         public override Vector2Int GetNextStep()
         {
-            Vector2Int recommendTarget = GroupBrain.GetInstance().RecommendTarget;
-            Vector2Int recommendPoint = GroupBrain.GetInstance().RecommendPoint;
+            Vector2Int recommendTarget = base.groupBrain.RecommendTarget;
+            Vector2Int recommendPoint = base.groupBrain.RecommendPoint;
 
             float distanceToRecommendTarget = Vector2Int.Distance(recommendTarget, unit.Pos);
 
